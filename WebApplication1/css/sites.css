@@ -1,0 +1,61 @@
+﻿body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin: 20px 0px 0px -8px;
+    background-color: #e6e600;
+}
+
+.container-left {
+    width: 20%;
+    height: 500px;
+    float: left;
+    display: block;
+    border: 1px solid black;
+}
+
+.container-mid {
+    width: 50%;
+    height: 500px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+.container-right {
+    width: 30%;
+    height: 500px;
+    float: right;
+    border: 1px solid black;
+}
+
+.container-left h2 {
+    margin-left: 35%;
+}
+
+.datalist-1 {
+    margin-left: 35%;
+}
+
+.link-btn {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
+.link-btn:hover {
+    color: #000;
+}
+
+.container-right h2 {
+    margin-left: 35%;
+}
+
+.container-right p,input {
+    margin-left: 30%;
+}

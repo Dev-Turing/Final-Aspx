@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link type="text/css"  rel="stylesheet" href="./css/sites.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+            <div class="container">
+                <div class="container-left">
+                    <h2>
+                        LOẠI HÀNG
+                    </h2>
+                    <asp:DataList ID="DataList1" runat="server" CssClass="datalist-1">
+                       <ItemTemplate>
+                           <asp:LinkButton CssClass="link-btn" ID="LinkButton1" runat="server" Text='<%# Eval("LoaiHang") %>' CommandArgument='<%# Eval("LoaiHang") %>' OnClick="LinkButton1_Click">LinkButton</asp:LinkButton>
+                       </ItemTemplate>
+                    </asp:DataList>
+                </div>
+                <div class="container-mid">
+                    <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="container-right">
+                    <h2>ĐĂNG NHẬP</h2>
+                    <hr />
+                    <p>Tên đăng nhập</p>
+                    <asp:TextBox ID="TextBox1" runat="server" Text=""></asp:TextBox>
+                    <p>Mật khẩu</p>
+                    <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" Text=""></asp:TextBox>
+                    <hr />
+                    <asp:Button ID="Button1" runat="server" Text="Đăng nhập" OnClick="Button1_Click"/>
+                </div>
+            </div>
+    </form>
+</body>
+</html>
